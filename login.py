@@ -3,7 +3,7 @@ from PIL import Image
 from  BD.banco_dados import BancoDeDados
 
 
-bd = BancoDeDados()
+BD = BancoDeDados()
 
 def modify_footer_text(text, color):
     footer_label.configure(text=text, text_color=color)
@@ -20,10 +20,10 @@ def handle_user_action(action_function,failure_message):
         modify_footer_text(failure_message, 'red')
 
 def login():
-    handle_user_action(bd.verify_user, "Digite usuário e senha")
+    handle_user_action(BD.verify_user, "Digite usuário e senha")
 
 def sign_up():
-    handle_user_action(bd.register_user, "Digite usuário e senha")
+    handle_user_action(BD.register_user, "Digite usuário e senha")
 
 
 # Inicializando a janela principal
