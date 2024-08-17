@@ -13,7 +13,7 @@ build_exe_options = {
 
 # Configura o executável
 executables = [
-    Executable("login.py", base=None)
+    Executable("login.py", base="Win32GUI")
 ]
 
 # Configura o setup
