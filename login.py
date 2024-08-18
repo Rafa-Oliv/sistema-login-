@@ -69,11 +69,11 @@ button_frame = ctk.CTkFrame(main_frame, fg_color="transparent")
 button_frame.pack(pady=10)
 
 # Botão de Login
-login_button = ctk.CTkButton(button_frame, text="LOGIN", width=150, command=login)
+login_button = ctk.CTkButton(button_frame, text="ENTRAR", width=150, command=login)
 login_button.grid(row=0, column=0, padx=10)
 
 # Botão de Cadastro
-sign_up_button = ctk.CTkButton(button_frame, text="SIGN UP", width=150, command=sign_up)
+sign_up_button = ctk.CTkButton(button_frame, text="CADASTRAR", width=150, command=sign_up)
 sign_up_button.grid(row=0, column=1, padx=10)
 
 # Texto de informação para o usuário
