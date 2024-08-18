@@ -3,7 +3,7 @@ import bcrypt
 import os
 
 
-class BancoDeDados:
+class DataBase:
     # Função para criar o banco de dados e a tabela de usuários únicos,
     def __init__(self):
         # Diretório atual do módulo
@@ -40,7 +40,7 @@ class BancoDeDados:
             conn.commit()
             return f"Usuário {username} cadastrado com sucesso!","green"
         except sqlite3.IntegrityError:
-            return f"Error: Usuário {username} já existe!","red"
+            return f"Usuário {username} já existe!","red"
         conn.close()
 
     # Função para verificar se o usuário existe e se a senha está correta
